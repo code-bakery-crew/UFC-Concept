@@ -1,0 +1,13 @@
+.Letter {
+  position: absolute;
+  -webkit-filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
+}
+
+.FContainer {
+  height: 100%;
+}
+
+.WordFragmentWrapper {
+  position: relative;
+}

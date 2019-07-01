@@ -1,0 +1,12 @@
+.menuContainer {
+  text-align: center;
+}
+
+.menuIcon {
+  color: #3A3A3A;
+  font-size: 4vh !important;
+}
+
+.logoContainer:hover, .menuIcon:hover {
+  cursor: pointer;
+}

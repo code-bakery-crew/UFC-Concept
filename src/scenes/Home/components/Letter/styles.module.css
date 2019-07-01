@@ -1,0 +1,20 @@
+.Letter {
+  height: 45vh;
+  max-width: 95%;
+  -webkit-filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
+}
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .Letter {
+    height: 20vh;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .Letter {
+    height: 20vh;
+  }
+}

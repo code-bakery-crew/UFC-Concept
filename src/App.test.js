@@ -13,10 +13,6 @@ import App from './App';
 describe('App', () => {
   const wrapper = shallow(<App />)
 
-  it('Should render App component', () => {
-    expect(wrapper.length).toBe(1)
-  })
-
   it('Should redirect to 404 from invalid path', () => {
     const wrapper = mount(
       <MemoryRouter initialEntries={[ '/random' ]}>

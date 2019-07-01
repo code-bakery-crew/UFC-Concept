@@ -1,0 +1,14 @@
+.searchIconContainer {
+  text-align: right;
+  margin-right: 6vw;
+}
+
+.searchIcon {
+  position: absolute;
+  transform: translate(0, 50%);
+  font-size: 3vh !important;
+}
+
+.searchIcon:hover {
+  cursor: pointer;
+}
