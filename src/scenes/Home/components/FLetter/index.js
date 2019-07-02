@@ -37,7 +37,6 @@ const FLetter = () => (
           />
         )}
       </Motion>
-      {/* 240% */}
     </Grid>
     <Grid item xs={12} className={styles.WordFragmentWrapper}>
       <Motion
