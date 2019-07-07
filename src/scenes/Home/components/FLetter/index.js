@@ -1,6 +1,6 @@
 import React from "react";
-import UpperF from "./images/UpperF.png";
-import LowerF from "./images/LowerF.png";
+import UpperFLetterImage from "./images/UpperFLetterImage.png";
+import LowerFLetterImage from "./images/LowerFLetterImage.png";
 import { Grid } from "@material-ui/core";
 import { Motion, spring } from "react-motion";
 import detectSafari from "../../../../services/utils/detectSafari";
@@ -25,14 +25,14 @@ const FLetter = () => (
       >
         {({ x }) => (
           <img
-            src={UpperF}
+            src={UpperFLetterImage}
             alt="FLetter"
             className={styles.Letter}
             style={{
               right: "1vw",
               maxWidth: "75%",
-              transform: `translate3d(0, ${x + transformUnits}, 0)`,
-              WebkitTransform: `translate3d(0, ${x + transformUnits}, 0)`
+              transform: `translate3d(-2%, ${x + transformUnits}, 0)`,
+              WebkitTransform: `translate3d(-2%, ${x + transformUnits}, 0)`
             }}
           />
         )}
@@ -45,7 +45,7 @@ const FLetter = () => (
       >
         {({ x }) => (
           <img
-            src={LowerF}
+            src={LowerFLetterImage}
             alt="FLetter"
             className={styles.Letter}
             style={{

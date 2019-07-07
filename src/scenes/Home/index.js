@@ -4,8 +4,8 @@ import OrganizationSentence from "./components/OrganizationSentence";
 import ShareIcon from "./components/ShareIcon";
 import NameTag from "./components/NameTag";
 import Letter from "./components/Letter";
-import U from "./images/U.png";
-import C from "./images/C.png";
+import ULetterImage from "./images/ULetterImage.png";
+import CLetterImage from "./images/CLetterImage.png";
 import Navigation from "../../components/Navigation";
 import FLetter from "./components/FLetter";
 import { Motion, spring } from "react-motion";
@@ -27,7 +27,7 @@ const Home = () => (
         position: "fixed",
         top: topAndBottomOfMain,
         bottom: topAndBottomOfMain,
-        marginBottom: "10vh",
+        marginBottom,
         zIndex: -100
       }}
     >
@@ -40,7 +40,7 @@ const Home = () => (
                 transform: `translate3d(${x}px, ${positionConstraint}, 0)`
               }}
             >
-              <Letter src={U} alt="ULetter" />
+              <Letter src={ULetterImage} alt="ULetter" />
             </div>
           )}
         </Motion>
@@ -57,7 +57,7 @@ const Home = () => (
                 transform: `translate3d(${x}px, ${positionConstraint}, 0)`
               }}
             >
-              <Letter src={C} alt="CLetter" />
+              <Letter src={CLetterImage} alt="CLetter" />
             </div>
           )}
         </Motion>
