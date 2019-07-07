@@ -1,0 +1,28 @@
+.pageContainer {
+  background: linear-gradient(90deg, #ececec 50%, #ffffff 50%) !important;
+  height: 100%;
+}
+
+.techniqueImage {
+  width: 80%;
+}
+
+.imageWrapper {
+  margin-top: 7vh;
+}
+
+.techniqueImageContainer {
+  text-align: center;
+}
+
+.descriptionContainer {
+  margin-top: 13vh;
+  margin-left: 7vw;
+  margin-right: 5vw;
+  color: #686868;
+}
+
+.stepperWrapper {
+  margin-top: 13vh;
+  transform: translate(50%, 0);
+}

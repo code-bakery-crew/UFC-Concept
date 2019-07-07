@@ -5,7 +5,7 @@
 
 .searchIcon {
   position: absolute;
-  transform: translate(0, 50%);
+  transform: translate(0, 25%);
   font-size: 3vh !important;
 }
 
