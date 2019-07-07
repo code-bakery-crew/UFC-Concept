@@ -32,14 +32,14 @@ const SidebarMenu = props => (
       <Grid item xs={2} />
       <Grid item xs={8}>
         <ul className={styles.menuList}>
-          <li>
+          <li className='menuOption'>
             <Link to="/techniques">TECHNIQUES</Link>
           </li>
-          <li>FIGHTERS</li>
-          <li>
+          <li className='menuOption'>FIGHTERS</li>
+          <li className='menuOption'>
             <Link to="/daily-summary">DAILY SUMMARY</Link>
           </li>
-          <li>
+          <li className='menuOption'>
             <Link to="/videos">VIDEOS</Link>
           </li>
         </ul>
