@@ -1,0 +1,21 @@
+.nameTagContainer {
+  text-align: center;
+}
+
+.nameTag {
+  width: 65%;
+}
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .nameTag {
+    width: 75%;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .nameTag {
+    width: 75%;
+  }
+}

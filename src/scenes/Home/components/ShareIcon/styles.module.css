@@ -1,0 +1,15 @@
+.shareContainer {
+  text-align: right;
+  margin-right: 6vw;
+}
+
+.shareIcon {
+  font-size: 3vh !important;
+  color: #3A3A3A;
+  position: absolute; 
+  transform: translate(0, 50%);
+}
+
+.shareIcon:hover {
+  cursor: pointer;
+}
