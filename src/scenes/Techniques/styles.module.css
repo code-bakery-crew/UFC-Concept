@@ -1,5 +1,5 @@
 .pageContainer {
-  background: linear-gradient(90deg, #ececec 50%, #ffffff 50%) !important;
+  background: linear-gradient(90deg, #ececec 50%, #ffffff 50%);
   height: 100%;
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
 }
 
-.descriptionContainer {
+.descriptionWrapper {
   margin-top: 13vh;
   margin-left: 7vw;
   margin-right: 5vw;
@@ -24,5 +24,52 @@
 
 .stepperWrapper {
   margin-top: 13vh;
-  transform: translate(50%, 0);
+}
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .pageContainer {
+    height: 100%;
+    background: inherit;
+  }
+
+  .descriptionContainer {
+    margin-top: 5vh !important;
+    background-color: #ffffff;
+  }
+
+  .descriptionWrapper {
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    color: #686868;
+  }
+
+  .stepperWrapper {
+    margin-top: 3vh;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .pageContainer {
+    height: 100%;
+    background: inherit;
+  }
+
+  .descriptionContainer {
+    margin-top: 5vh !important;
+    background-color: #ffffff;
+  }
+
+  .descriptionWrapper {
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    color: #686868;
+  }
+
+  .stepperWrapper {
+    margin-top: 3vh;
+  }
 }

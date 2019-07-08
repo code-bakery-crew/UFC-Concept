@@ -14,7 +14,7 @@ const Techniques = () => {
     <div className={styles.pageContainer}>
       <Navigation title={"TECHNIQUES"} />
       <Grid container>
-        <Grid item xs={6} className={styles.techniqueImageContainer}>
+        <Grid item xs={12} md={6} className={styles.techniqueImageContainer}>
           <div className={styles.imageWrapper}>
             <img
               src={`/images/${techniques[currentTechnique].name}Image.png`}
@@ -23,16 +23,18 @@ const Techniques = () => {
             />
           </div>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6} className={styles.descriptionContainer}>
           <Grid container>
-            <Grid item xs={10}>
-              <div className={styles.descriptionContainer}>
+            <Grid item xs={11} md={10}>
+              <div className={styles.descriptionWrapper}>
                 <Description technique={techniques[currentTechnique]} />
               </div>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item xs={false} md={1} />
+            <Grid item xs={1}>
               <div className={styles.stepperWrapper}>
                 <Stepper
+                  current={currentTechnique}
                   techniques={techniques.length}
                   onTechniqueChanged={i => changeTechnique(i)}
                 />

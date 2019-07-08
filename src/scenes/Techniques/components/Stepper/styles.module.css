@@ -8,3 +8,18 @@
 .step:hover {
   cursor: pointer;
 }
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .step {
+    margin-top: 2h;
+    background-color: #9B9B9B;
+    width: 1vw;
+    height: 4.5vh;
+  }
+}

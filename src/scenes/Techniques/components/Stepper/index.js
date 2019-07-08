@@ -5,16 +5,22 @@ import styles from "./styles.module.css";
 
 const Stepper = props => {
   const elements = [];
-  //Add some props to check which is active and change color accordingly
+  
   for (let i = 0; i < props.techniques; i++) {
-    elements.push(<div key={i} onClick={() => props.onTechniqueChanged(i)} className={styles.step} />);
+    let selectedStyle = null
+    if (i === props.current) {
+      selectedStyle = { backgroundColor: '#D20A0A' }
+    }
+    elements.push(<div key={i} style={selectedStyle} onClick={() => props.onTechniqueChanged(i)} className={styles.step} />);
   }
 
   return <div>{elements}</div>;
 };
 
 Stepper.propTypes = {
-  techniques: PropTypes.number.isRequired
+  current: PropTypes.number.isRequired,
+  techniques: PropTypes.number.isRequired,
+  onTechniqueChanged: PropTypes.func.isRequired
 };
 
 export default Stepper;
