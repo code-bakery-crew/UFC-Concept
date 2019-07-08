@@ -11,7 +11,7 @@ const Stepper = props => {
     if (i === props.current) {
       selectedStyle = { backgroundColor: '#D20A0A' }
     }
-    elements.push(<div key={i} style={selectedStyle} onClick={() => props.onTechniqueChanged(i)} className={styles.step} />);
+    elements.push(<div key={i} style={selectedStyle} onClick={() => props.onTechniqueChanged(i)} className={styles.step} id={`step${i}`} />);
   }
 
   return <div>{elements}</div>;
