@@ -8,7 +8,7 @@ import styles from "./styles.module.css";
 import { techniques } from "../../services/data/techniques.json";
 
 const Techniques = () => {
-  const [currentTechnique, changeTechnique] = useState(0);
+  const [currentTechniqueIndex, changeTechnique] = useState(0);
 
   return (
     <div className={styles.pageContainer}>
@@ -17,7 +17,7 @@ const Techniques = () => {
         <Grid item xs={12} md={6} className={styles.techniqueImageContainer}>
           <div className={styles.imageWrapper}>
             <img
-              src={`/images/${techniques[currentTechnique].name}Image.png`}
+              src={`/images/${techniques[currentTechniqueIndex].name}Image.png`}
               className={styles.techniqueImage}
               alt="TechniqueImage"
             />
@@ -27,15 +27,15 @@ const Techniques = () => {
           <Grid container>
             <Grid item xs={11} md={10}>
               <div className={styles.descriptionWrapper}>
-                <Description technique={techniques[currentTechnique]} />
+                <Description technique={techniques[currentTechniqueIndex]} />
               </div>
             </Grid>
             <Grid item xs={false} md={1} />
             <Grid item xs={1}>
               <div className={styles.stepperWrapper}>
                 <Stepper
-                  current={currentTechnique}
-                  techniques={techniques.length}
+                  current={currentTechniqueIndex}
+                  techniques={techniques}
                   onTechniqueChanged={i => changeTechnique(i)}
                 />
               </div>

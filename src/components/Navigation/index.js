@@ -11,7 +11,7 @@ const Navigation = ({ title }) => {
   const pageTitle = title ? <div style={{ transform: 'translate(0, 25%)', color: '#3a3a3a', fontSize: '2.2vh' }}>{title}</div> : null;
 
   return (
-    <Grid container style={{ paddingTop: "4vh" }}>
+    <Grid container style={{ paddingTop: "6vh" }}>
       <Drawer open={menuOpened} onClose={() => toggleMenu(false)}>
         <SidebarMenu onMenuClosed={() => toggleMenu(false)} />
       </Drawer>
