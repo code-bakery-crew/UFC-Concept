@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import OrganizationSentence from "./components/OrganizationSentence";
-import ShareIcon from "./components/ShareIcon";
+import ShareIcon from "../../components/ShareIcon";
 import NameTag from "./components/NameTag";
 import Letter from "./components/Letter";
 import ULetterImage from "./images/ULetterImage.png";
@@ -13,7 +13,7 @@ import { isMobile } from "react-device-detect";
 import detectSafari from "../../services/utils/detectSafari";
 
 const marginBottom = isMobile ? "10vh" : "5vh";
-const topAndBottomOfMain = isMobile ? "15vh" : "0"
+const topAndBottomOfMain = isMobile ? "15vh" : "0";
 const positionConstraint = detectSafari() ? "50%" : "0";
 
 const Home = () => (

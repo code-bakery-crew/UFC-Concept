@@ -5,7 +5,7 @@ import Navigation from '../../components/Navigation';
 import FLetter from './components/FLetter';
 import NameTag from './components/NameTag';
 import OrganizationSentence from './components/OrganizationSentence';
-import ShareIcon from './components/ShareIcon';
+import ShareIcon from '../../components/ShareIcon';
 
 describe('Home', () => {
   const wrapper = shallow(<Home />)

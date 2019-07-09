@@ -12,3 +12,19 @@
 .searchIcon:hover {
   cursor: pointer;
 }
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .searchIcon {
+    font-size: 3.5vh !important;
+    transform: translate(0, 10%);
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .searchIcon {
+    font-size: 3.5vh !important;
+    transform: translate(0, 10%);
+  }
+}

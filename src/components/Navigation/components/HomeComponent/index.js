@@ -4,6 +4,7 @@ import { Grid, Hidden } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
 import { isMobile } from 'react-device-detect'
+import PropTypes from 'prop-types'
 
 import styles from "./styles.module.css";
 
@@ -15,10 +16,10 @@ if (isMobile) {
   float = "right"
 }
 
-const HomeComponent = () => (
+const HomeComponent = (props) => (
   <Grid container>
     <Grid item xs={3} md={7} className={styles.menuContainer}>
-      <Menu className={styles.menuIcon} />
+      <Menu onClick={props.onMenuOpened} className={styles.menuIcon} />
     </Grid>
     <Hidden mdUp>
       <Grid item xs={4} />
@@ -30,5 +31,9 @@ const HomeComponent = () => (
     </Grid>
   </Grid>
 );
+
+HomeComponent.propTypes = {
+  onMenuOpened: PropTypes.func.isRequired
+}
 
 export default HomeComponent;
