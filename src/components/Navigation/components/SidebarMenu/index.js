@@ -49,7 +49,7 @@ const SidebarMenu = props => (
       <Grid item xs={false} md={1} />
       <Grid item xs={3} className={styles.shop}>
         <a
-          href="https://ufcstore.com/?utm_campaign=NA&utm_medium=header&utm_source=ufccom"
+          href="https://ufcstore.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
