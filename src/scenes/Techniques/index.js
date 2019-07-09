@@ -36,7 +36,7 @@ const Techniques = () => {
                 <Stepper
                   current={currentTechniqueIndex}
                   techniques={techniques}
-                  onTechniqueChanged={i => changeTechnique(i)}
+                  onTechniqueChanged={changeTechnique}
                 />
               </div>
             </Grid>
