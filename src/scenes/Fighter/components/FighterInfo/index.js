@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 import PropTypes from "prop-types";
 
 import styles from "./styles.module.css";
@@ -26,19 +26,21 @@ const FighterInfo = ({ fighter }) => {
 
   return (
     <Grid container className={styles.fighterInfoContainer}>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <Grid container>
-          <Grid item xs={12}>
-            <h1 className={styles.name}>{firstName}</h1>
-          </Grid>
-          <Grid item xs={12}>
-            <h1 className={styles.name}>{lastName}</h1>
-          </Grid>
-          <Grid item xs={12}>
-            <p
-              className={styles.metrics}
-            >{`${wins}-${loses}-${draws} (W-L-D)`}</p>
-          </Grid>
+          <Hidden mdDown>
+            <Grid item xs={12}>
+              <h1 className={styles.name}>{firstName}</h1>
+            </Grid>
+            <Grid item xs={12}>
+              <h1 className={styles.name}>{lastName}</h1>
+            </Grid>
+            <Grid item xs={12}>
+              <p
+                className={styles.metrics}
+              >{`${wins}-${loses}-${draws} (W-L-D)`}</p>
+            </Grid>
+          </Hidden>
           <Grid item xs={12}>
             <p
               className={styles.currentRank}
@@ -51,11 +53,11 @@ const FighterInfo = ({ fighter }) => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={1} />
-      <Grid item xs={7}>
+      <Grid item xs={false} md={1} />
+      <Grid item xs={12} md={7}>
         <hr className={styles.breakLine} />
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <Grid container>
               <Grid item xs={12}>
                 <h4 className={styles.headerSmall}>Skill Breakdown</h4>
@@ -77,10 +79,13 @@ const FighterInfo = ({ fighter }) => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6}>
-            <Grid container>
+          <Grid item xs={12} md={6}>
+            <Grid container className={styles.fighterInfoWrapper}>
               <Grid item xs={12}>
                 <h4 className={styles.headerSmall}>Fighter Info</h4>
+                <Hidden mdUp>
+                  <hr className={styles.breakLineMobile} />
+                </Hidden>
               </Grid>
               <Grid item xs={12}>
                 <p className={styles.content}>

@@ -1,11 +1,13 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Hidden } from "@material-ui/core";
 import Navigation from "../../components/Navigation/index.js";
 import FighterInfo from "./components/FighterInfo/index.js";
+import { MobileOnlyView } from "react-device-detect";
+import FighterTable from "./components/FighterTable/index.js";
+import MobileInformations from "./components/MobileInformations/index.js";
 
 import styles from "./styles.module.css";
 import { fighters } from "../../services/data/fighters.json";
-import FighterTable from "./components/FighterTable/index.js";
 
 const Fighter = props => {
   const currentFigtherIndex = props.match.params.id;
@@ -15,7 +17,7 @@ const Fighter = props => {
     <>
       <Navigation />
       <Grid container>
-        <Grid item xs={4}>
+        <Grid item xs={6} md={4}>
           <div className={styles.circle} />
           <img
             src={`/images/fighters/fighter${currentFigtherIndex}Image.png`}
@@ -23,7 +25,14 @@ const Fighter = props => {
             alt="FighterImage"
           />
         </Grid>
-        <Grid item xs={8}>
+        <Hidden mdUp>
+          <MobileOnlyView>
+            <Grid item xs={6}>
+              <MobileInformations fighter={fighter} />
+            </Grid>
+          </MobileOnlyView>
+        </Hidden>
+        <Grid item xs={12} md={8}>
           <Grid container>
             <Grid item xs={12}>
               <FighterInfo fighter={fighter} />
