@@ -1,0 +1,52 @@
+.table {
+  margin-right: 5vw;
+  font-size: 1.8vh;
+  table-layout: fixed;
+  color: #4E4E4E;
+}
+
+.resultImage {
+  max-width: 100%;
+}
+
+.tableHead {
+  background-color: #9E9A9A;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  padding: 1vh 0 1vh 0.5vw;
+}
+
+.resultImageColumn {
+  width: 5vw;
+}
+
+.fightersColumn {
+  width: 9vw;
+}
+
+.textGrayed {
+  color: rgba(78, 78, 78, 0.5);
+}
+
+.eventColumn {
+  width: 8vw;
+}
+
+.statisticsColumn {
+  width: 3vw;
+}
+
+.methodColumn {
+  width: 7vw;
+}
+
+.watchReplayColumn {
+  width: 8vw;
+  text-align: center;
+}
+
+.watchReplay {
+  margin: 1vh 0 1vh 0;
+  max-width: 40%;
+}

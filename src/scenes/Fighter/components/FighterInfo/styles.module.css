@@ -1,0 +1,43 @@
+.fighterInfoContainer {
+  color: #4E4E4E;
+}
+
+.name {
+  margin: 0;
+}
+
+.metrics {
+  margin: 1vh 0 1vh 0;
+  font-size: 2.2vh;
+}
+
+.currentRank {
+  margin: 0 0 1vh 0;
+  font-size: 1.8vh;
+}
+
+.content {
+  margin: 0;
+  font-size: 1.8vh;
+  line-height: 2.8vh;
+}
+
+.chartsInfo {
+  margin-right: 6vw;
+}
+
+.record {
+  margin-top: 2vh;
+}
+
+.headerSmall {
+  margin: 1vh 0 2vh 0;
+}
+
+.breakLine {
+  position: absolute;
+  width: 32.5vw;
+  margin: 4.5vh 0 0 0;
+  border-color: #D20A0A;
+  border-width: 0.5px;
+}

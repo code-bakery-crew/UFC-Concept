@@ -8,15 +8,15 @@ import { fighters } from "../../services/data/fighters.json";
 import FighterTable from "./components/FighterTable/index.js";
 
 const Fighter = props => {
-  const currentFigtherIndex = props.match.params.id
-  const fighter = fighters.find(x => x.id === parseInt(currentFigtherIndex))
-  console.log(fighter);
+  const currentFigtherIndex = props.match.params.id;
+  const fighter = fighters.find(x => x.id === parseInt(currentFigtherIndex));
 
   return (
     <>
       <Navigation />
       <Grid container>
         <Grid item xs={4}>
+          <div className={styles.circle} />
           <img
             src={`/images/fighters/fighter${currentFigtherIndex}Image.png`}
             className={styles.fighterImage}
@@ -28,8 +28,11 @@ const Fighter = props => {
             <Grid item xs={12}>
               <FighterInfo fighter={fighter} />
             </Grid>
-            <Grid item xs={12}>
-              <FighterTable fighterName={`${fighter.firstName} ${fighter.lastName}`} fights={fighter.fights} />
+            <Grid item xs={12} className={styles.fighterTableContainer}>
+              <FighterTable
+                fighterName={`${fighter.firstName} ${fighter.lastName}`}
+                fights={fighter.fights}
+              />
             </Grid>
           </Grid>
         </Grid>

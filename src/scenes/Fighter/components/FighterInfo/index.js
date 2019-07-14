@@ -1,7 +1,8 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import PropTypes from "prop-types";
 
-// Prop types!
+import styles from "./styles.module.css";
 
 const FighterInfo = ({ fighter }) => {
   const {
@@ -10,6 +11,7 @@ const FighterInfo = ({ fighter }) => {
     wins,
     loses,
     draws,
+    currentRank,
     fightNightBonuses,
     summary,
     nickname,
@@ -23,69 +25,102 @@ const FighterInfo = ({ fighter }) => {
   } = fighter;
 
   return (
-    <Grid container>
+    <Grid container className={styles.fighterInfoContainer}>
       <Grid item xs={4}>
         <Grid container>
           <Grid item xs={12}>
-            {firstName}
+            <h1 className={styles.name}>{firstName}</h1>
           </Grid>
           <Grid item xs={12}>
-            {lastName}
+            <h1 className={styles.name}>{lastName}</h1>
           </Grid>
           <Grid item xs={12}>
-            {`${wins}-${loses}-${draws} (W-L-D)`}
+            <p
+              className={styles.metrics}
+            >{`${wins}-${loses}-${draws} (W-L-D)`}</p>
           </Grid>
           <Grid item xs={12}>
-            {`Fight Night Bonuses: ${fightNightBonuses}`}
+            <p
+              className={styles.currentRank}
+            >{`Current Rank: ${currentRank}`}</p>
+          </Grid>
+          <Grid item xs={12}>
+            <p
+              className={styles.content}
+            >{`Fight Night Bonuses: ${fightNightBonuses}`}</p>
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={1} />
+      <Grid item xs={7}>
+        <hr className={styles.breakLine} />
         <Grid container>
           <Grid item xs={6}>
             <Grid container>
               <Grid item xs={12}>
-                Skill Breakdown
+                <h4 className={styles.headerSmall}>Skill Breakdown</h4>
               </Grid>
               <Grid item xs={12}>
-                Charts are compiled based on results from 10 fights
+                <p className={[styles.content, styles.chartsInfo].join(" ")}>
+                  Charts are compiled based on results from 10 fights
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Record: {`${wins}-${loses}-${draws}`}
+                <p className={[styles.content, styles.record].join(" ")}>
+                  <b>Record:</b> {`${wins}-${loses}-${draws}`}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Summary: {summary}
+                <p className={styles.content}>
+                  <b>Summary:</b> {summary}
+                </p>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={6}>
             <Grid container>
               <Grid item xs={12}>
-                Fighter Info
+                <h4 className={styles.headerSmall}>Fighter Info</h4>
               </Grid>
               <Grid item xs={12}>
-                Nickname: {nickname}
+                <p className={styles.content}>
+                  <b>Nickname:</b> {nickname}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                From: {from}
+                <p className={styles.content}>
+                  <b>From:</b> {from}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Fights Out Of: {fightsOutOf}
+                <p className={styles.content}>
+                  <b>Fights Out Of:</b> {fightsOutOf}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Age: {age}
+                <p className={styles.content}>
+                  <b>Age:</b> {age}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Height: {height}
+                <p className={styles.content}>
+                  <b>Height:</b> {height}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Weight: {weight}
+                <p className={styles.content}>
+                  <b>Weight:</b> {weight}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Reach: {reach}
+                <p className={styles.content}>
+                  <b>Reach:</b> {reach}
+                </p>
               </Grid>
               <Grid item xs={12}>
-                Leg Reach: {legReach}
+                <p className={styles.content}>
+                  <b>Leg Reach:</b> {legReach}
+                </p>
               </Grid>
             </Grid>
           </Grid>
@@ -93,6 +128,10 @@ const FighterInfo = ({ fighter }) => {
       </Grid>
     </Grid>
   );
+};
+
+FighterInfo.propTypes = {
+  fighter: PropTypes.object.isRequired
 };
 
 export default FighterInfo;
