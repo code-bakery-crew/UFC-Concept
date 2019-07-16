@@ -19,6 +19,6 @@ describe("Techniques", () => {
   });
 
   it("Should pass two techniques", () => {
-    expect(wrapper.find("Stepper").prop("techniques")).toEqual(2);
+    expect(wrapper.find("Stepper").prop("techniques").length).toEqual(2);
   });
 });
