@@ -1,0 +1,7 @@
+.logoContainer img{
+    min-width: 10vw;
+}
+  
+  .logoContainer:hover {
+      cursor: pointer;
+    }

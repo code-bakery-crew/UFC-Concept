@@ -1,0 +1,24 @@
+
+.Fighter{
+    position: relative;
+    bottom: -14vw;
+    margin-top: 0.6vh;
+    right: 8.8vw;
+    max-width: 47vw;
+    
+    -webkit-filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    .Fighter{
+        position: absolute;
+        bottom: 0;
+        max-width: 80vw;
+        left: 9vw;
+        -webkit-filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+        filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    }
+}
