@@ -17,7 +17,7 @@ const Techniques = () => {
         <Grid item xs={12} md={6} className={styles.techniqueImageContainer}>
           <div className={styles.imageWrapper}>
             <img
-              src={`/images/${techniques[currentTechniqueIndex].name}Image.png`}
+              src={`/images/techniques/${techniques[currentTechniqueIndex].name}Image.png`}
               className={styles.techniqueImage}
               alt="TechniqueImage"
             />

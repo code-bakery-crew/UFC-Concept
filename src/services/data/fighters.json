@@ -1,0 +1,180 @@
+{
+  "fighters": [
+    {
+      "id": 1,
+      "firstName": "Conor",
+      "lastName": "McGregor",
+      "wins": 21,
+      "loses": 3,
+      "draws": 0,
+      "currentRank": "Champion Lightweight",
+      "fightNightBonuses": "Bonuses: 6 Performance of the Night / 2 Fight of the Night 1 Knockout of the Night",
+      "record": "21-3-0",
+      "summary": "My Belief",
+      "nickname": "The Notorious",
+      "from": "Dublin Ireland",
+      "fightsOutOf": "Dublin Ireland",
+      "age": 29,
+      "height": "5' 9\" ( 175 cm )",
+      "weight": "155 lb (70 kg)",
+      "reach": "74'",
+      "legReach": "40\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "belt",
+          "opponent": "Eddie Alvarez",
+          "event": "UFC 205",
+          "date": "Nov 12.2016",
+          "opponentStatistics": {
+            "str": 9,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 32,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=lfVeIHqWsZY",
+          "awards": "Performance of the Night"
+        },
+        {
+          "id": 2,
+          "result": "win",
+          "opponent": "Nate Diaz",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 166,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 164,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Majority",
+          "replay": "https://www.youtube.com/watch?v=6qZZWAScCn8",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "loss",
+          "opponent": "Nate Diaz",
+          "event": "UFC 196",
+          "date": "Mar 5.2016",
+          "opponentStatistics": {
+            "str": 77,
+            "td": 1,
+            "sub": 2,
+            "pass": 1
+          },
+          "fighterStatistics": {
+            "str": 61,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 Submission",
+          "replay": "https://www.youtube.com/watch?v=j1tXIl0snEk",
+          "awards": "Performance of the Night"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Cody",
+      "lastName": "Garbrandt",
+      "wins": 11,
+      "loses": 0,
+      "draws": 0,
+      "currentRank": "Champion Bantamweight",
+      "fightNightBonuses": "1 Performance of the Night / 1 Fight of the Night",
+      "record": "11-0-0",
+      "summary": "Striking, wrestling, cardio",
+      "nickname": "No Love",
+      "from": "Ohio USA",
+      "fightsOutOf": "California USA",
+      "age": 26,
+      "height": "5' 8\" ( 172 cm )",
+      "weight": "135 lb (61 kg)",
+      "reach": "65\"",
+      "legReach": "38\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "upcoming",
+          "opponent": "TJ Dillshaw",
+          "event": "UFC 217",
+          "date": "Nov 4.2017",
+          "opponentStatistics": {
+            "str": null,
+            "td": null,
+            "sub": null,
+            "pass": null
+          },
+          "fighterStatistics": {
+            "str": null,
+            "td": null,
+            "sub": null,
+            "pass": null
+          },
+          "method": null,
+          "replay": null,
+          "awards": null
+        },
+        {
+          "id": 2,
+          "result": "belt",
+          "opponent": "Dominick Cruz",
+          "event": "UFC 207",
+          "date": "Dec 30.2016",
+          "opponentStatistics": {
+            "str": 88,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 68,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Unanimous",
+          "replay": "https://www.youtube.com/watch?v=GeHfYmm3-3g",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "win",
+          "opponent": "Takeya Mizugaki",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 4,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 12,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R1 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=8jZYRV8QfKQ",
+          "awards": null
+        }
+      ]
+    }
+  ]
+}
