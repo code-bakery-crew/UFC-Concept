@@ -1,0 +1,125 @@
+.fighterInfoContainer {
+  color: #4e4e4e;
+}
+
+.name {
+  margin: 0;
+}
+
+.metrics {
+  margin: 1vh 0 1vh 0;
+  font-size: 2.2vh;
+}
+
+.currentRank {
+  margin: 0 0 1vh 0;
+  font-size: 1.8vh;
+}
+
+.content {
+  margin: 0;
+  font-size: 1.8vh;
+  line-height: 2.8vh;
+}
+
+.chartsInfo {
+  margin-right: 6vw;
+}
+
+.record {
+  margin-top: 2vh;
+}
+
+.headerSmall {
+  margin: 1vh 0 2vh 0;
+}
+
+.breakLine {
+  position: absolute;
+  width: 32.5vw;
+  margin: 4.5vh 0 0 0;
+  border-color: #d20a0a;
+  border-width: 0.5px;
+}
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .fighterInfoContainer {
+    padding-top: 5vh;
+    background-color: #ffffff;
+  }
+
+  .currentRank,
+  .content {
+    margin-left: 5vw;
+    font-size: 2.3vh;
+  }
+
+  .headerSmall {
+    font-size: 2.8vh;
+    margin-left: 5vw;
+    margin-top: 4vh;
+  }
+
+  .breakLine {
+    width: 90vw;
+    margin: 8vh 0 0 5vw;
+  }
+
+  .content {
+    line-height: 3.3vh;
+  }
+
+  .breakLineMobile {
+    position: absolute;
+    width: 90vw;
+    margin: -1.5vh 0 0 5vw;
+    border-color: #d20a0a;
+    border-width: 0.5px;
+  }
+
+  .fighterInfoWrapper {
+    padding-bottom: 5vh;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .fighterInfoContainer {
+    padding-top: 5vh;
+    background-color: #ffffff;
+  }
+
+  .currentRank,
+  .content {
+    margin-left: 5vw;
+    font-size: 2.3vh;
+  }
+
+  .headerSmall {
+    font-size: 2.8vh;
+    margin-left: 5vw;
+    margin-top: 4vh;
+  }
+
+  .breakLine {
+    width: 90vw;
+    margin: 8vh 0 0 5vw;
+  }
+
+  .content {
+    line-height: 3.3vh;
+  }
+
+  .breakLineMobile {
+    position: absolute;
+    width: 90vw;
+    margin: -1.5vh 0 0 5vw;
+    border-color: #d20a0a;
+    border-width: 0.5px;
+  }
+
+  .fighterInfoWrapper {
+    padding-bottom: 3vh;
+  }
+}
