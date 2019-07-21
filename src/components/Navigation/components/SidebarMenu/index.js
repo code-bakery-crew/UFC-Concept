@@ -44,7 +44,7 @@ const SidebarMenu = ({ onMenuClosed }) => {
   ];
 
   return (
-    <div style={{ height: '100%' }}>
+    <div className={styles.container}>
       <SidebarPanel
         subMenu={subMenu}
         menuHead={
