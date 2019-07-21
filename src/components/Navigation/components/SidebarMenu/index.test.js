@@ -9,13 +9,7 @@ describe("SidebarMenu", () => {
     <SidebarMenu onMenuClosed={() => console.log("menu closed")} />
   );
 
-  it("Should render Close icon and image", () => {
-    expect(wrapper.find(".Close")).toHaveLength(1);
-    expect(wrapper.find(".LogoImage")).toHaveLength(1);
+  it("Should render Two sidebar panels", () => {
+    expect(wrapper.find('SidebarPanel')).toHaveLength(2);
   });
-
-  it("Should render sub-pages and shop", () => {
-    expect(wrapper.find(".menuOption")).toHaveLength(4)
-    expect(wrapper.find(".shop")).toHaveLength(1)
-  })
 });

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Grid, Hidden } from "@material-ui/core";
 import Close from "@material-ui/icons/Close";
@@ -9,38 +9,19 @@ import ShareIcon from "../../../ShareIcon";
 import SidebarPanel from "./components/SidebarPanel";
 import styles from "./styles.module.css";
 import { isMobile } from "react-device-detect";
-
+import fightersData from '../../../../services/data/fighters';
 
 
 const SidebarMenu = ({ onMenuClosed }) => {
   const [subMenu, setSubMenu] = useState(false);
-  const fightersMenuOptions = [ // TODO: links
+  const fightersMenuOptions = fightersData.fighters.map(fighter => (
     {
-      value: 'WEIGHT CLASSES',
-      style: {color: '#D20A0A'}
-    },
-    {
-      value: 'Flyweight',
-    },
-    {
-      value: 'Banatamweight',
-    },
-    {
-      value: 'Featherweight',
-    },
-    {
-      value: 'Lightweight',
-    },
-    {
-      value: 'Welterweight',
-    },
-    {
-      value: 'Light Heavyweight',
-    },
-    {
-      value: 'Heavyweight',
-    },
-  ];
+      value: [fighter.firstName, fighter.lastName].join(' '),
+      link: `/fighters/${fighter.id}`,
+      click: onMenuClosed
+    }
+  ));
+
   const menuOptions = [
     {
       value: 'TECHNIQUES',
@@ -50,7 +31,7 @@ const SidebarMenu = ({ onMenuClosed }) => {
       value: 'FIGHTERS',
       link: '#',
       click: () => setSubMenu(!subMenu),
-      subItems: fightersMenuOptions.slice(1)
+      subItems: fightersMenuOptions
     },
     {
       value: 'DAILY SUMMARY',
@@ -63,24 +44,24 @@ const SidebarMenu = ({ onMenuClosed }) => {
   ];
 
   return (
-    <div style={{height: '100%'}}>
-    <SidebarPanel
+    <div style={{ height: '100%' }}>
+      <SidebarPanel
         subMenu={subMenu}
         menuHead={
           <>
-            <Grid item xs={false} md={1} />
+            <Grid item xs={false} md={1}/>
             <Grid item xs={2} md={3} className={styles.closeBtn}>
-              <Close onClick={onMenuClosed} className={styles.Close} />
+              <Close onClick={onMenuClosed} className={styles.Close}/>
             </Grid>
             <Grid item xs={4} className={styles.logoContainer}>
               <Link to="/">
-                <img className={styles.LogoImage} src={logo} alt="Logo" />
+                <img className={styles.LogoImage} src={logo} alt="Logo"/>
               </Link>
             </Grid>
             <Hidden mdUp>
-              <Grid item xs={3} />
+              <Grid item xs={3}/>
               <Grid item xs={2} className={styles.searchContainer}>
-                <SearchComponent />
+                <SearchComponent/>
               </Grid>
             </Hidden>
           </>
@@ -88,7 +69,7 @@ const SidebarMenu = ({ onMenuClosed }) => {
         menuOptions={menuOptions}
         menuBottom={
           <>
-            <Grid item xs={false} md={1} />
+            <Grid item xs={false} md={1}/>
             <Grid item xs={3} className={styles.shop}>
               <a
                 href="https://ufcstore.com/"
@@ -99,9 +80,9 @@ const SidebarMenu = ({ onMenuClosed }) => {
               </a>
             </Grid>
             <Hidden mdUp>
-              <Grid item xs={6} />
+              <Grid item xs={6}/>
               <Grid item xs={2}>
-                <ShareIcon />
+                <ShareIcon/>
               </Grid>
             </Hidden>
           </>
