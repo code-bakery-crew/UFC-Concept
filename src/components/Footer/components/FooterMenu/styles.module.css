@@ -1,0 +1,44 @@
+.MenuContainer{
+    justify-content: flex-end;
+    padding-right: 0.8vw;
+    padding-top: 1.2vh;
+}
+
+.MenuContainer ul{
+    list-style: none;
+    color: #95989A;
+    font-family: 'Roboto',  sans-serif;
+    font-size: 2.2vh;
+    line-height: 4vh;
+}
+
+.MenuContainer a{
+    text-decoration: none !important;
+    color: #95989A;
+}
+
+.MenuContainer a:hover{
+    color: #ECECEC;
+}
+
+.FirstList{
+    position: relative;
+    left: 4vw;
+}
+
+@media only screen and (max-width: 600px){
+    .MenuContainer{
+      padding-bottom: 4vh;
+      justify-content: center;
+    }
+
+    .MenuContainer ul{
+        padding-inline-start: 2.5vw;
+        white-space: nowrap;
+    }
+
+    .SecondList{
+        margin-left: 3vw;
+    }
+  }
+  

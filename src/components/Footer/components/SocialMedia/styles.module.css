@@ -1,0 +1,26 @@
+.IconsContainer img{
+    width:26%;
+    height:auto;
+    float: left;
+}
+
+.Instagram{
+    padding-left: 0.5vw;
+}
+
+.Twitter{
+    padding-left: 0.5vw;
+    padding-right: 0.4vw;
+}
+
+@media only screen and (max-width: 600px){
+    .Instagram{
+        padding-left: 3vw;
+    }
+
+    .Twitter{
+        padding-left: 3vw;
+        padding-right: 0vw;
+    }
+  }
+  

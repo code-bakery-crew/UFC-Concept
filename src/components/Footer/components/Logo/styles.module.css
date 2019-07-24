@@ -1,0 +1,19 @@
+.logoContainer{
+    padding-top: 4vh;
+}
+
+.logoContainer img{
+    max-width: 95%;
+}
+  
+.logoContainer:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+  .logoContainer img{
+    margin:0 auto;
+    display:block;
+    max-width: 50%;
+  }
+}
