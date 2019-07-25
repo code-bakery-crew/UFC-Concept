@@ -1,5 +1,4 @@
 .Error404{
-    font-family: 'Roboto',  sans-serif;
     color: #4E4E4E;
     font-weight: bold;
     max-height: 50vh;
@@ -11,16 +10,13 @@
     max-width: 70%;
 }
 
-
 .Error404 div{
     float: left;
 }
 
 .ErrorText{
-    font-family: 'Roboto',  sans-serif;
     color: #4E4E4E;
     text-shadow: 0vw 3vh 6vh rgba(0, 0, 0, 0.160);
-    
     position: relative;
     left: 17vw;
     top: 9vh;
@@ -46,17 +42,14 @@
     .ErrorText{
         position: relative;
         top: 5vh;
-        
     }
 
     .Oops{
         font-size: 10vw;
-        
     }
 
     .Kicked{
          font-size: 7.2vw;
-        
     }
 }
 
