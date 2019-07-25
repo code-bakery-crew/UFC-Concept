@@ -1,10 +1,10 @@
-.MenuContainer{
+.menuContainer{
     justify-content: flex-end;
     padding-right: 0.8vw;
     padding-top: 1.2vh;
 }
 
-.MenuContainer ul{
+.menuContainer ul{
     list-style: none;
     color: #95989A;
     font-family: 'Roboto',  sans-serif;
@@ -12,32 +12,36 @@
     line-height: 4vh;
 }
 
-.MenuContainer a{
+.menuContainer a{
     text-decoration: none !important;
     color: #95989A;
 }
 
-.MenuContainer a:hover{
+.menuContainer a:hover{
     color: #ECECEC;
 }
 
-.FirstList{
+.firstList{
     position: relative;
     left: 4vw;
 }
 
+.header{
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px){
-    .MenuContainer{
+    .menuContainer{
       padding-bottom: 4vh;
       justify-content: center;
     }
 
-    .MenuContainer ul{
+    .menuContainer ul{
         padding-inline-start: 2.5vw;
         white-space: nowrap;
     }
 
-    .SecondList{
+    .secondList{
         margin-left: 3vw;
     }
   }

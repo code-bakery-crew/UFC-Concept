@@ -7,8 +7,7 @@ import styles from "./styles.module.css";
 const Logo = () => (
    
   <Grid container className={styles.logoContainer} >
-    <Grid item xs={false} sm={7}  >
-    </Grid>
+    <Grid item xs={false} sm={7} />
     <Grid item xs={12} sm={5}  >
       <Link to="/"><img src={logo} alt="Logo" /></Link>
     </Grid>

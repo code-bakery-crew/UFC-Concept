@@ -4,6 +4,10 @@
     float: left;
 }
 
+.socialContainer{
+    padding-top: 2vh;
+}
+
 .Instagram{
     padding-left: 0.5vw;
 }
