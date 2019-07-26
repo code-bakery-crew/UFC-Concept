@@ -1,0 +1,27 @@
+.Info{
+    font-family: 'Roboto',  sans-serif;
+    color: #95989A;
+    font-size: 2.2vh;
+    position: relative;
+    left: 9.55vw;
+    padding-bottom: 3vh;
+    top: -3vh;
+}
+
+.Info a {
+    text-decoration: none;
+    color: #95989A;
+    font-weight: bold;
+}
+
+.Info a:hover {
+    color: #ECECEC;
+  }
+
+  @media only screen and (max-width: 600px){
+    .Info{
+      font-size: 2.2vh;
+      text-align: center;
+    }
+  }
+  

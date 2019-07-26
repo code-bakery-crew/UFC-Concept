@@ -8,6 +8,7 @@ import ULetterImage from "./images/ULetterImage.png";
 import CLetterImage from "./images/CLetterImage.png";
 import Navigation from "../../components/Navigation";
 import FLetter from "./components/FLetter";
+import Footer from "../../components/Footer";
 import { Motion, spring } from "react-motion";
 import { isMobile } from "react-device-detect";
 import detectSafari from "../../services/utils/detectSafari";
@@ -77,6 +78,11 @@ const Home = () => (
       <Grid item xs={1}>
         <ShareIcon />
       </Grid>
+    </Grid>
+    <Grid container  style={{position: "absolute", top: "100vh"}}>
+       <Grid item sm={12} >
+        <Footer/>
+      </Grid> 
     </Grid>
   </>
 );
