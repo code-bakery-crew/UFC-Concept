@@ -18,7 +18,7 @@
 .summaryTable > tbody > tr > td {
     height: 7vw;
     padding: .5vw 0;
-    border-bottom: 1px dashed #D20A0A;
+    border-bottom: 1px solid #D20A0A;
 }
 .pagination {
     text-align: center;

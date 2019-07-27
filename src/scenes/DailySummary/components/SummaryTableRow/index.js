@@ -9,8 +9,10 @@ const SummaryTableRow = ({ event }) => {
   const [open, setOpen] = useState(false);
   const elements = [
     <td>
-      <div className={styles.statusBox}>{event.status}</div>
-      {isBrowser ? null : <div>{open ? <ArrowUp/> : <ArrowDown/>}</div>}
+      <div className={styles.statusBox}>
+        {event.status}
+        {isBrowser ? null : open ? <ArrowUp/> : <ArrowDown/>}
+      </div>
       <Collapse in={open} className={styles.mobileDetails}>
         <p>Event: {`${event.event[0]} ${event.event[1]}`}</p>
         <p>Start time: {event.start_time}</p>
@@ -40,6 +42,7 @@ const SummaryTableRow = ({ event }) => {
     <td>{event.final_round}</td>,
     <td>{event.final_round_length}</td>,
   ];
+
   return (
     <tr key={`row-${event.id}`} onClick={() => isBrowser ? null : setOpen(!open)}>
       {isBrowser ? elements.map(e => e) : elements.slice(0, 2).map(e => e)}
