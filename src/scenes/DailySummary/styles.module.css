@@ -1,0 +1,29 @@
+.summaryTable {
+    width: 95%;
+    text-align: center;
+    padding: 2vw 2vw 0 2vw;
+    margin: 1% 2.5%;
+}
+
+.summaryTable > thead > tr > th {
+    color: white;
+    font-weight: normal;
+    background-color: #9E9A9A;
+
+    text-align: left;
+    padding: .3vw;
+    white-space: nowrap;
+}
+
+.summaryTable > tbody > tr > td {
+    height: 7vw;
+    padding: .5vw 0;
+    border-bottom: 1px dashed #D20A0A;
+}
+.pagination {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: .5vw;
+}
