@@ -2,20 +2,22 @@ import React from 'react'
 import { Grid } from '@material-ui/core'
 import PropTypes from 'prop-types'
 
+import styles from './styles.module.css'
+
 const Thumbnails = ({ videos, onCurrentVideoClick }) => {
   return (
-    <Grid container style={{ height: '80vh', overflowY: 'scroll' }}>
+    <Grid container className={styles.thumbnailsContainer}>
       {videos.map((video, key) => (
-        <Grid container key={video.id} onClick={() => onCurrentVideoClick(key)}>
+        <Grid container className={styles.thumbnailContainer} key={video.id} onClick={() => onCurrentVideoClick(key)}>
           <Grid item xs={12}>
             <img
               src={video.thumbnail}
               alt={`${video.title}Thumbnail`}
-              style={{ width: '100%' }}
+              className={styles.videoImage}
             />
           </Grid>
-          <Grid item xs={12}>
-            <p>{video.title}</p>
+          <Grid item xs={12} className={styles.titleWrapper}>
+            <p className={styles.videoTitle}>{video.title}</p>
           </Grid>
         </Grid>
       ))}
