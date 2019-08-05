@@ -26,7 +26,7 @@ const DailySummary = () => {
   ];
   return (
     <div>
-      <Navigation title="SUMMARY PAGE" />
+      <Navigation title="SUMMARY PAGE"/>
       <div style={{ width: '100%' }}>
         <table className={styles.summaryTable}>
           <thead>
@@ -44,7 +44,7 @@ const DailySummary = () => {
         </table>
       </div>
       <div className={styles.pagination}>
-        <IconButton disabled={page <= 1} onClick={() => setPage(page - 1)} >
+        <IconButton disabled={page <= 1} onClick={() => setPage(page - 1)}>
           <ArrowLeft/>
         </IconButton>
         <span>{`${page}/${totalPages}`}</span>
