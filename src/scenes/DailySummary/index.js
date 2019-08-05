@@ -48,7 +48,7 @@ const DailySummary = () => {
           <ArrowLeft/>
         </IconButton>
         <span>{`${page}/${totalPages}`}</span>
-        <IconButton disabled={page >= totalPages} onClick={() => setPage(page + 1)} href={"#"}>
+        <IconButton disabled={page >= totalPages} onClick={() => setPage(page + 1)}>
           <ArrowRight/>
         </IconButton>
       </div>
