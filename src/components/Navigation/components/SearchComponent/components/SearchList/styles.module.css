@@ -1,0 +1,11 @@
+.resultList{
+    position: absolute;
+    top: 5.7vh;
+    right: 6.5vw;
+    height: 20vh;
+    width: 21vw;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.69);  
+    -webkit-filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+}
