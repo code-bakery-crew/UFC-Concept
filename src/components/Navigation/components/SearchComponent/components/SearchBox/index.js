@@ -69,7 +69,7 @@ class SearchBox extends React.Component{
                 <>
                     {searchContent}
                 </>
-                <form onSubmit={this.handleSubmit}>
+                <form autoComplete="off" onSubmit={this.handleSubmit}>
                     <input id="search" type="text" value={this.state.searchStr} placeholder="Search..." className={styles.searchField} onChange={this.handleSearch} onBlur={this.clearInput}>
                     </input>
                 </form>

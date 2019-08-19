@@ -2,7 +2,7 @@
     position: absolute;
     top: 5.7vh;
     right: 6.5vw;
-    height: 20vh;
+    height: auto;
     width: 21vw;
     border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.69);  
