@@ -1,0 +1,19 @@
+.pageContainer {
+  margin-top: 6.5vh;
+}
+
+.fighterImage {
+  max-width: 32vw;
+  bottom: 0;
+}
+
+.leftFighter {
+  position: absolute;
+  left: -10vw;
+}
+
+.rightFighter {
+  float: right;
+  position: fixed;
+  right: -10vw;
+}

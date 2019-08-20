@@ -1,0 +1,70 @@
+.videoWrapper {
+  text-align: center;
+}
+
+.titleWrapper {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 0 3vw 0 3vw !important;
+  margin: -1vh 1.2vw 0 1.2vw !important;
+}
+
+.title {
+  color: #4E4E4E;
+  font-weight: 300 !important;
+}
+
+.breakLine {
+  position: absolute;
+  width: 40vw;
+  margin: -1vh 0 0 2vw;
+  border-color: #d20a0a;
+  border-width: 0.5px;
+}
+
+.descriptionWrapper {
+  background-color: #FFFFFF;
+  margin: 0 1.2vw 0 1.2vw !important;
+  padding-bottom: 2vh;
+  text-align: center;
+}
+
+.description {
+  margin: 2vh 3vw 0 3vw;
+  font-size: 2vh;
+  color: #4E4E4E;
+}
+
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .titleWrapper {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 0 3vw 0 3vw !important;
+    margin: -1vh 2.6vw 0 2.5vw !important;
+  }
+
+  .descriptionWrapper {
+    background-color: #FFFFFF;
+    margin: 0 2.6vw 0 2.5vw !important;
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+}
+
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .titleWrapper {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 0 3vw 0 3vw !important;
+    margin: -1vh 2.6vw 0 2.5vw !important;
+  }
+
+  .descriptionWrapper {
+    background-color: #FFFFFF;
+    margin: 0 2.6vw 0 2.5vw !important;
+    padding-bottom: 2vh;
+    text-align: center;
+  }
+}
