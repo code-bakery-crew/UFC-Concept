@@ -1,0 +1,94 @@
+{
+  "eventData": [
+    {
+      "id": 1,
+      "status": "UP COMMING",
+      "fighters": [
+        "Jakub Zbąski",
+        "Conor McGregor"
+      ],
+      "event": [
+        "UFC 227",
+        "Los Angeles"
+      ],
+      "venue": "Staples Center",
+      "start_time": "22:50",
+      "winner": "-",
+      "method": "-",
+      "final_round": "-",
+      "final_round_length": "-"
+    },
+    {
+      "id": 2,
+      "status": "IN PROGRESS",
+      "fighters": [
+        "Max Holloway",
+        "Conor McGregor"
+      ],
+      "event": [
+        "UFC 227",
+        "Los Angeles"
+      ],
+      "venue": "Staples Center",
+      "start_time": "23:50",
+      "winner": "-",
+      "method": "-",
+      "final_round": "-",
+      "final_round_length": "-"
+    },
+    {
+      "id": 3,
+      "status": "ENDED",
+      "fighters": [
+        "Eddie ALvarez",
+        "Conor McGregor"
+      ],
+      "event": [
+        "UFC 227",
+        "Los Angeles"
+      ],
+      "venue": "Staples Center",
+      "start_time": "00:50",
+      "winner": "Conor McGregor",
+      "method": "KO/TKO",
+      "final_round": "3",
+      "final_round_length": "4:53"
+    },
+    {
+      "id": 4,
+      "status": "UP COMING",
+      "fighters": [
+        "Jakub Zbąski",
+        "Conor McGregor"
+      ],
+      "event": [
+        "UFC 227",
+        "Los Angeles"
+      ],
+      "venue": "Staples Center",
+      "start_time": "22:50",
+      "winner": "-",
+      "method": "-",
+      "final_round": "-",
+      "final_round_length": "-"
+    },
+    {
+      "id": 5,
+      "status": "UP COMING",
+      "fighters": [
+        "Jakub Zbąski",
+        "Conor McGregor"
+      ],
+      "event": [
+        "UFC 227",
+        "Los Angeles"
+      ],
+      "venue": "Staples Center",
+      "start_time": "22:50",
+      "winner": "-",
+      "method": "-",
+      "final_round": "-",
+      "final_round_length": "-"
+    }
+  ]
+}
