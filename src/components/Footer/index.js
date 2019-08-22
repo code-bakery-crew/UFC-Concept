@@ -16,7 +16,7 @@ const Footer = () => (
             <Grid item xs={12} sm={6}>
                 <FooterMenu/>
             </Grid>
-            <Grid xs={10}>
+            <Grid item xs={10}>
                 <InfoText/>
             </Grid>
         </Grid>

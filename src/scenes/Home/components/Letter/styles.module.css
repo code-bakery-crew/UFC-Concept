@@ -9,6 +9,7 @@
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   .Letter {
     height: 20vh;
+    transform: translateY(50%);
   }
 }
 
@@ -16,5 +17,6 @@
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   .Letter {
     height: 20vh;
+    transform: translateY(50%);
   }
 }

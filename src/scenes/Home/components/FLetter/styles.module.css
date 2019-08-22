@@ -1,13 +1,31 @@
-.Letter {
-  position: absolute;
+.upperFLetterImage {
+  max-width: 75%;
+  margin-left: 5vw;
+}
+
+.lowerFLetterImage {
   -webkit-filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
   filter: drop-shadow(4.8vw 2.15vh 11.91vh rgba(0, 0, 0, 0.16));
+  max-width: 85%;
+  margin-top: 7vh;
 }
 
-.FContainer {
-  height: 100%;
+/* iPhone not X */
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  
 }
 
-.WordFragmentWrapper {
-  position: relative;
+/* iPhone X */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .upperFLetterImage {
+    margin-top: 10vh;
+    max-width: 90%;
+    margin-left: 3vw;
+  }
+
+  .lowerFLetterImage {
+    max-width: 100%;
+    margin-top: 4vh;
+    margin-left: -3vw;
+  }
 }

@@ -1,24 +1,22 @@
-import React from "react";
-import UpperFLetterImage from "./images/UpperFLetterImage.png";
-import LowerFLetterImage from "./images/LowerFLetterImage.png";
-import { Grid } from "@material-ui/core";
-import { Motion, spring } from "react-motion";
-import detectSafari from "../../../../services/utils/detectSafari";
+import React from 'react'
+import UpperFLetterImage from './images/UpperFLetterImage.png'
+import LowerFLetterImage from './images/LowerFLetterImage.png'
+import { Grid } from '@material-ui/core'
+import { Motion, spring } from 'react-motion'
+import detectSafari from '../../../../services/utils/detectSafari'
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css'
 
-let upperFSpringValue = 0;
-let lowerFSpringValue = 0;
-let transformUnits = "px";
+let upperFSpringValue = 0
+let transformUnits = 'px'
 if (detectSafari()) {
-  upperFSpringValue = 240;
-  transformUnits = "%";
-  lowerFSpringValue = "-90";
+  upperFSpringValue = 240
+  transformUnits = '%'
 }
 
 const FLetter = () => (
-  <Grid container className={styles.FContainer}>
-    <Grid item xs={12} className={styles.WordFragmentWrapper}>
+  <Grid container>
+    <Grid item xs={12}>
       <Motion
         defaultStyle={{ x: -600 }}
         style={{ x: spring(upperFSpringValue) }}
@@ -26,31 +24,27 @@ const FLetter = () => (
         {({ x }) => (
           <img
             src={UpperFLetterImage}
-            alt="FLetter"
-            className={styles.Letter}
+            alt='FLetter'
+            className={styles.upperFLetterImage}
             style={{
-              right: "1vw",
-              maxWidth: "75%",
-              transform: `translate3d(-2%, ${x + transformUnits}, 0)`,
-              WebkitTransform: `translate3d(-2%, ${x + transformUnits}, 0)`
+              transform: `translate3d(0, ${x + transformUnits}, 0)`,
+              WebkitTransform: `translate3d(0, ${x + transformUnits}, 0)`
             }}
           />
         )}
       </Motion>
     </Grid>
-    <Grid item xs={12} className={styles.WordFragmentWrapper}>
+    <Grid item xs={12}>
       <Motion
         defaultStyle={{ x: 600 }}
-        style={{ x: spring(lowerFSpringValue) }}
+        style={{ x: spring(detectSafari() ? 110 : 0) }}
       >
         {({ x }) => (
           <img
             src={LowerFLetterImage}
-            alt="FLetter"
-            className={styles.Letter}
+            alt='FLetter'
+            className={styles.lowerFLetterImage}
             style={{
-              bottom: 0,
-              maxWidth: "85%",
               transform: `translate3d(0, ${x + transformUnits}, 0)`,
               WebkitTransform: `translate3d(0, ${x + transformUnits}, 0)`
             }}
@@ -59,6 +53,6 @@ const FLetter = () => (
       </Motion>
     </Grid>
   </Grid>
-);
+)
 
-export default FLetter;
+export default FLetter

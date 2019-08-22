@@ -32,7 +32,7 @@ const Home = () => (
         zIndex: -100
       }}
     >
-      <Grid item xs={3}>
+      <Grid item xs={4} md={3}>
         <Motion defaultStyle={{ x: -600 }} style={{ x: spring(0) }}>
           {({ x }) => (
             <div
@@ -46,10 +46,10 @@ const Home = () => (
           )}
         </Motion>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={4} md={3}>
         <FLetter />
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={4} md={3}>
         <Motion defaultStyle={{ x: 600 }} style={{ x: spring(0) }}>
           {({ x }) => (
             <div
