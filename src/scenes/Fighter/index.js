@@ -21,7 +21,7 @@ const Fighter = props => {
           <div className={styles.circle} />
           <img
             src={`/images/fighters/fighter${currentFigtherIndex}Image.png`}
-            className={styles.fighterImage}
+            className={[styles.fighterImage, 'bottom'].join(' ')}
             alt="FighterImage"
           />
         </Grid>
