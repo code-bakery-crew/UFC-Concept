@@ -20,7 +20,7 @@ const Videos = () => {
           <Grid item xs={2}>
             <img
               src={leftFighter}
-              className={[styles.fighterImage, styles.leftFighter].join(' ')}
+              className={[styles.fighterImage, styles.leftFighter, 'bottom'].join(' ')}
               alt='leftFighter'
             />
           </Grid>
@@ -38,7 +38,7 @@ const Videos = () => {
           <Grid item xs={2}>
             <img
               src={rightFighter}
-              className={[styles.fighterImage, styles.rightFighter].join(' ')}
+              className={[styles.fighterImage, styles.rightFighter, 'bottom'].join(' ')}
               alt='rightFighter'
             />
           </Grid>
