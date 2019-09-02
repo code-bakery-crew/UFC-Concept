@@ -175,6 +175,358 @@
           "awards": null
         }
       ]
+    },
+    {
+      "id": 3,
+      "firstName": "Daniel",
+      "lastName": "Cormier",
+      "wins": 21,
+      "loses": 9,
+      "draws": 0,
+      "currentRank": "Champion Heavyweight",
+      "fightNightBonuses": "Bonuses: 6 Performance of the Night / 2 Fight of the Night 1 Knockout of the Night",
+      "record": "21-3-0",
+      "summary": "My Belief",
+      "nickname": "The Notorious",
+      "from": "Dublin Ireland",
+      "fightsOutOf": "Dublin Ireland",
+      "age": 29,
+      "height": "5' 9\" ( 175 cm )",
+      "weight": "155 lb (70 kg)",
+      "reach": "74'",
+      "legReach": "40\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "belt",
+          "opponent": "Eddie Alvarez",
+          "event": "UFC 205",
+          "date": "Nov 12.2016",
+          "opponentStatistics": {
+            "str": 9,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 32,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=lfVeIHqWsZY",
+          "awards": "Performance of the Night"
+        },
+        {
+          "id": 2,
+          "result": "win",
+          "opponent": "Nate Diaz",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 166,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 164,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Majority",
+          "replay": "https://www.youtube.com/watch?v=6qZZWAScCn8",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "loss",
+          "opponent": "Nate Diaz",
+          "event": "UFC 196",
+          "date": "Mar 5.2016",
+          "opponentStatistics": {
+            "str": 77,
+            "td": 1,
+            "sub": 2,
+            "pass": 1
+          },
+          "fighterStatistics": {
+            "str": 61,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 Submission",
+          "replay": "https://www.youtube.com/watch?v=j1tXIl0snEk",
+          "awards": "Performance of the Night"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Amanda",
+      "lastName": "Nunes",
+      "wins": 21,
+      "loses": 3,
+      "draws": 0,
+      "currentRank": "Champion Lightweight",
+      "fightNightBonuses": "Bonuses: 6 Performance of the Night / 2 Fight of the Night 1 Knockout of the Night",
+      "record": "21-3-0",
+      "summary": "My Belief",
+      "nickname": "The Notorious",
+      "from": "Dublin Ireland",
+      "fightsOutOf": "Dublin Ireland",
+      "age": 29,
+      "height": "5' 9\" ( 175 cm )",
+      "weight": "155 lb (70 kg)",
+      "reach": "74'",
+      "legReach": "40\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "belt",
+          "opponent": "Eddie Alvarez",
+          "event": "UFC 205",
+          "date": "Nov 12.2016",
+          "opponentStatistics": {
+            "str": 9,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 32,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=lfVeIHqWsZY",
+          "awards": "Performance of the Night"
+        },
+        {
+          "id": 2,
+          "result": "win",
+          "opponent": "Nate Diaz",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 166,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 164,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Majority",
+          "replay": "https://www.youtube.com/watch?v=6qZZWAScCn8",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "loss",
+          "opponent": "Nate Diaz",
+          "event": "UFC 196",
+          "date": "Mar 5.2016",
+          "opponentStatistics": {
+            "str": 77,
+            "td": 1,
+            "sub": 2,
+            "pass": 1
+          },
+          "fighterStatistics": {
+            "str": 61,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 Submission",
+          "replay": "https://www.youtube.com/watch?v=j1tXIl0snEk",
+          "awards": "Performance of the Night"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Khahib",
+      "lastName": "Nurmagedov",
+      "wins": 17,
+      "loses": 3,
+      "draws": 0,
+      "currentRank": "Champion Heavyweight",
+      "fightNightBonuses": "Bonuses: 6 Performance of the Night / 2 Fight of the Night 1 Knockout of the Night",
+      "record": "21-3-0",
+      "summary": "My Belief",
+      "nickname": "The Notorious",
+      "from": "Dublin Ireland",
+      "fightsOutOf": "Dublin Ireland",
+      "age": 29,
+      "height": "5' 9\" ( 175 cm )",
+      "weight": "155 lb (70 kg)",
+      "reach": "74'",
+      "legReach": "40\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "belt",
+          "opponent": "Eddie Alvarez",
+          "event": "UFC 205",
+          "date": "Nov 12.2016",
+          "opponentStatistics": {
+            "str": 9,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 32,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=lfVeIHqWsZY",
+          "awards": "Performance of the Night"
+        },
+        {
+          "id": 2,
+          "result": "win",
+          "opponent": "Nate Diaz",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 166,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 164,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Majority",
+          "replay": "https://www.youtube.com/watch?v=6qZZWAScCn8",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "loss",
+          "opponent": "Nate Diaz",
+          "event": "UFC 196",
+          "date": "Mar 5.2016",
+          "opponentStatistics": {
+            "str": 77,
+            "td": 1,
+            "sub": 2,
+            "pass": 1
+          },
+          "fighterStatistics": {
+            "str": 61,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 Submission",
+          "replay": "https://www.youtube.com/watch?v=j1tXIl0snEk",
+          "awards": "Performance of the Night"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "firstName": "Henry",
+      "lastName": "Cejudo",
+      "wins": 21,
+      "loses": 9,
+      "draws": 0,
+      "currentRank": "Champion Lightweight",
+      "fightNightBonuses": "Bonuses: 6 Performance of the Night / 2 Fight of the Night 1 Knockout of the Night",
+      "record": "21-3-0",
+      "summary": "My Belief",
+      "nickname": "The Notorious",
+      "from": "Dublin Ireland",
+      "fightsOutOf": "Dublin Ireland",
+      "age": 29,
+      "height": "5' 9\" ( 175 cm )",
+      "weight": "155 lb (70 kg)",
+      "reach": "74'",
+      "legReach": "40\"",
+      "fights": [
+        {
+          "id": 1,
+          "result": "belt",
+          "opponent": "Eddie Alvarez",
+          "event": "UFC 205",
+          "date": "Nov 12.2016",
+          "opponentStatistics": {
+            "str": 9,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 32,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 KO/TKO",
+          "replay": "https://www.youtube.com/watch?v=lfVeIHqWsZY",
+          "awards": "Performance of the Night"
+        },
+        {
+          "id": 2,
+          "result": "win",
+          "opponent": "Nate Diaz",
+          "event": "UFC 202",
+          "date": "Aug 20.2016",
+          "opponentStatistics": {
+            "str": 166,
+            "td": 1,
+            "sub": 0,
+            "pass": 0
+          },
+          "fighterStatistics": {
+            "str": 164,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R5 Decision-Majority",
+          "replay": "https://www.youtube.com/watch?v=6qZZWAScCn8",
+          "awards": "Fight of the Night"
+        },
+        {
+          "id": 3,
+          "result": "loss",
+          "opponent": "Nate Diaz",
+          "event": "UFC 196",
+          "date": "Mar 5.2016",
+          "opponentStatistics": {
+            "str": 77,
+            "td": 1,
+            "sub": 2,
+            "pass": 1
+          },
+          "fighterStatistics": {
+            "str": 61,
+            "td": 0,
+            "sub": 0,
+            "pass": 0
+          },
+          "method": "R2 Submission",
+          "replay": "https://www.youtube.com/watch?v=j1tXIl0snEk",
+          "awards": "Performance of the Night"
+        }
+      ]
     }
   ]
 }

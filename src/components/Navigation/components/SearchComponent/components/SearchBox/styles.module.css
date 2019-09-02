@@ -8,19 +8,22 @@
     width: 0;
     background-color: #ECECEC;
     padding-left: 1vw;
-    -webkit-transition: width 0.8s ease-in-out,
-                        background-color 0.8s ease-in-out;
-    transition: width 0.8s ease-in-out,
-                background-color 0.8s ease-in-out;
-    -webkit-filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
-    filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    -webkit-transition: width 2s ease-in-out,
+                        background-color 2s ease-in-out;
+    transition: width 2s ease-in-out,
+                background-color 2s ease-in-out;
 }
 
 .searchField:focus{
     width: 20vw;
     background-color: #F5F5F5;
     outline: none;
-    
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16)); 
+    -webkit-transition: width 0.8s ease-in-out,
+                        background-color 0.8s ease-in-out;
+    transition: width 0.8s ease-in-out,
+                background-color 0.8s ease-in-out;
 }
 
 .searchField::placeholder{
