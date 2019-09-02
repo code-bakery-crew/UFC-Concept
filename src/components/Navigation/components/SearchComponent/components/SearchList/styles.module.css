@@ -5,7 +5,45 @@
     height: auto;
     width: 21vw;
     border-radius: 15px;
-    background-color: rgba(245, 245, 245, 0.69);  
-    -webkit-filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
-    filter: drop-shadow(0vw 3vh 6vh rgba(0, 0, 0, 0.16));
+    padding-top: 5vh;
+    background-color: rgba(245, 245, 245, 0.75);  
+    -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+
+.noResult{
+    text-align: center;
+    margin-top: 2vh;
+    color: #4E4E4E;
+}
+.line{
+    margin: auto;
+    border-top: 1px solid #4E4E4E; 
+    width: 90%;
+}
+
+.listElement{
+    color: #707070;
+    margin: auto;
+    text-align: left;
+    padding-top: 1.6vh;
+    border-radius: 15px;
+    padding-bottom: 2vh;
+    font-size: 1.6vh;
+    /* border-radius: 15px; */
+}
+.listElement:hover{
+    background-color: rgba(245, 245, 245, 0.8); 
+}
+.elements{
+    margin: auto;
+    width: 90%;
+}
+.linkStyle{
+    text-decoration: none;
+}
+
+.fullName{
+    color: #4E4E4E;
+    font-size: 2.2vh;
 }

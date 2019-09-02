@@ -1,77 +1,44 @@
 import React from 'react';
+import { Debounce } from 'react-throttle';
 import styles from "./styles.module.css";
-import SearchList from "../SearchList";
 
 class SearchBox extends React.Component{
 
     constructor(props) {
         super(props);
-        this.state = {
-            clicked: false,
-            listOpen: false,
-            searchStr: '',
-        };
         this.isfocused= this.isfocused.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleSearch = this.handleSearch.bind(this);
-        this.clearInput = this.clearInput.bind(this);
+    
     }
 
-    isfocused(){
-
-        if(this.state.clicked){
+    isfocused = (click) =>{
+        if(click){
             document.getElementById("search").focus();
-        }else{
-            document.getElementById("search").blur();
-        }
+    }
     }
 
-    componentDidUpdate(prevProps){
-        if(this.props.isClicked !== prevProps.isClicked){
-            this.setState({clicked: this.props.isClicked})
-        }
-        this.isfocused();
-    }
-
-    handleSubmit(event){
+    handleSubmit = (event) =>{
         event.preventDefault();
     }
 
-
-    handleSearch(event){
-        this.setState({
-            searchStr: event.target.value,
-            listOpen: true
-        });
-    }
-
-    clearInput(){
-        this.setState({
-            clicked: false,
-            listOpen: false,
-            searchStr: ''
-        });
-        document.getElementById("search").blur();
+    clearInput = (event) =>{
+        event.target.value = '';
+        let val = event.target.value;
+        
+        setTimeout(() => {
+            this.props.handleSearch(val);
+            this.props.unclicked();
+          }, 150);
     }
 
     render(){
-
-        let searchContent = null;
-
-        if(this.state.listOpen){
-            searchContent = (
-                <SearchList searchStr={this.state.searchStr}/>
-            )   
-        }
-
+        this.isfocused(this.props.isClicked);
         return(
             <>
-                <>
-                    {searchContent}
-                </>
                 <form autoComplete="off" onSubmit={this.handleSubmit}>
-                    <input id="search" type="text" value={this.state.searchStr} placeholder="Search..." className={styles.searchField} onChange={this.handleSearch} onBlur={this.clearInput}>
-                    </input>
+                    <Debounce time="300" handler="onChange">
+                        <input id="search" type="text"  placeholder="Search..." className={styles.searchField} onChange={event => this.props.handleSearch(event.target.value)} onBlurCapture={event => this.clearInput(event)} />
+                    </Debounce>
                 </form>
             </>
         );
